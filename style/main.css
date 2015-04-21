@@ -1,0 +1,160 @@
+body {
+    background-color: #f1f1f1;  
+}
+.main-wrapper {
+    margin-bottom: 50px;
+}
+h1.page-header {
+    color: #000000;   
+}
+.thumbnail {
+    margin-bottom: 10px;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.thumbnail .thumbnail-img-wrapper {
+    position: relative;
+    z-index: 10;
+}
+.thumbnail .thumbnail-img {
+    min-height: 250px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+.thumbnail .author-info {
+    display: table-row;
+}
+
+.thumbnail .author-info .avatar{
+    display: table-cell;
+    margin-bottom: 9px;
+    vertical-align: middle;
+    width: 70px;   
+}
+.thumbnail h4 {
+    display: table-cell;
+    padding: 9px;
+    vertical-align: middle;
+}
+.thumbnail .info-box {
+    width: 100%;
+    background: rgb(0, 0, 0); /* The Fallback */
+    background: rgba(0,0,0,0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+.thumbnail .info-box > p{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 9px;
+    margin: 0;
+}
+.thumbnail .dribble-url {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -25px;
+    -webkit-animation: fadeIn 0.7s;
+    -moz-animation: fadeIn 0.7s;
+    -ms-animation: fadeIn 0.7s;
+    animation: fadeIn 0.7s;
+    color: #2D2D2D;
+}
+
+.thumbnail .dribble-url.ng-hide {
+    -webkit-animation: fadeOut 0.7s;
+    -moz-animation: fadeOut 0.7s;
+    -ms-animation: fadeOut 0.7s;
+    animation: fadeOut 0.7s;
+}
+
+.thumbnail .dribble-url .glyphicon {
+    background: rgb(240,240,240);
+    background: rgba(240,240,240, 0.8);
+ border: 1x solid grey;
+ padding:10px;
+  display: inline-block;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  -moz-box-shadow: 0px 0px 2px #888;
+  -webkit-box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px #888;   
+}
+.thumbnail .dribble-url .glyphicon:hover {
+    background: rgb(255,255,255);
+    background: rgba(255,255,255, 0.8);
+}
+
+.thumbnail .caption {
+    -webkit-animation: fadeInDown 0.7s;
+    -moz-animation: fadeInDown 0.7s;
+    -ms-animation: fadeInDown 0.7s;
+    animation: fadeInDown 0.7s;
+    background: #fff;
+}
+
+.thumbnail .caption.ng-hide {
+    -webkit-animation: fadeOutUp 0.7s;
+    -moz-animation: fadeOutUp 0.7s;
+    -ms-animation: fadeOutUp 0.7s;
+    animation: fadeOutUp 0.7s;
+}
+
+.fixed-footer {
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 8px 8px 8px #696868;
+}
+
+.fixed-footer .pagination {
+    margin: 10px 0 5px;
+}
+    
+.deckgrid[deckgrid]::before {
+    content: '3 .column.column-1-3';
+    font-size: 0;
+    visibility: hidden;
+}
+
+.deckgrid .column {
+    float: left;
+    padding: 5px;
+}
+
+.deckgrid .column-1-3 {
+    width: 33.33333333333%;
+}
+
+@media screen and (max-width: 992px) {
+    .deckgrid[deckgrid]::before {
+        content: '2 .column.column-1-2';
+    }
+
+    .deckgrid .column-1-2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .deckgrid[deckgrid]::before {
+        content: '1 .column.column-1-1';
+    }
+
+    .deckgrid .column-1-1 {
+        width: 100%;
+    }
+}
